@@ -14,7 +14,7 @@
              Grün &amp; Klar GbR Eduard-Mörike-Str. 6 68535 Edingen-Neckarhausen
                </div>
             </div>
-            <div style="font-size: 10px;border-top-style: solid;border-top-color: #000000;padding-top: 4px;padding-bottom: 5px;position: absolute;width: 100%;margin-bottom: 0px;margin-top: auto;bottom:0px;">
+            <div class="row" style="font-size: 10px;border-top-style: solid;border-top-color: #000000;padding-top: 4px;padding-bottom: 5px;position: absolute;width: 100%;margin-bottom: 0px;margin-top: auto;bottom:0px;">
                 <div class="col-4">
                     <div class="text-center">
                         Grün &amp; Klar<br />
@@ -49,14 +49,14 @@
     <template id="address_layout_gruen">
         <t t-set="colclass" t-value="('col-sm-5' if report_type == 'html' else 'col-5') + ' ms-auto'"/>
         <t t-if="address">
-            <div class="address row" style="position: relative;top: 10px;left: 55px;margin: 0px;">
+            <div class="address row" style="position: relative;top: 10px;left: 65px;margin: 0px;">
                 <t t-if="information_block">
                     <t t-set="colclass" t-value="'col-5 offset-1'"/>
                     <div name="information_block" class="col-6">
                         <t t-out="information_block"/>
                     </div>
                 </t>
-                <div name="address" style="margin-left: 0px!important;padding-left: 0px;margin-bottom:0px;" t-att-class="colclass">
+                <div name="address" style="margin-left: 10px!important;padding-left: 0px;margin-bottom:30px;" t-att-class="colclass">
                     <t t-esc="address"/>
                 </div>
             </div>
