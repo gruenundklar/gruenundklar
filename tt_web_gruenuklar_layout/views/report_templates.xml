@@ -15,27 +15,27 @@
                </div>
             </div>
             <div style="font-size: 10px;border-top-style: solid;border-top-color: #000000;padding-top: 4px;padding-bottom: 5px;position: absolute;width: 100%;margin-bottom: 0px;margin-top: auto;bottom:0px;">
-            <div class="col-4">
-                <div class="text-center">
-                    Grün &amp; Klar<br />
-                    Eduard-Mörike-Str. 6<br />
-                    68535 Edingen-Neckarhausen
+                <div class="col-4">
+                    <div class="text-center">
+                        Grün &amp; Klar<br />
+                        Eduard-Mörike-Str. 6<br />
+                        68535 Edingen-Neckarhausen
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center">
+                        St.Nr.: DE342502939<br />
+                        HRA
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="text-center">
+                        IBAN: DE53300209005390596320<br />
+                        BIC/SWIFT: CMCIDEDDXXX<br/>
+                        Bank: Targo Bank
+                    </div>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="text-center">
-                    St.Nr.: DE342502939<br />
-                    HRA
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="text-center">
-                    IBAN: DE53300209005390596320<br />
-                    BIC/SWIFT: CMCIDEDDXXX<br/>
-                    Bank: Targo Bank
-                </div>
-            </div>
-        </div>
 
         </div>
 
@@ -49,7 +49,7 @@
     <template id="address_layout_gruen">
         <t t-set="colclass" t-value="('col-sm-5' if report_type == 'html' else 'col-5') + ' ms-auto'"/>
         <t t-if="address">
-            <div class="address row" style="position: relative;top: 10px;left: 35px;margin: 0px;">
+            <div class="address row" style="position: relative;top: 10px;left: 55px;margin: 0px;">
                 <t t-if="information_block">
                     <t t-set="colclass" t-value="'col-5 offset-1'"/>
                     <div name="information_block" class="col-6">
