@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_contacts_customer_id" model="ir.ui.view">
+        <field name="name">Customer ID</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority">1000</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='image_1920']" position="after">
+                <div>
+                  <label for="cid" string="Kundennummer"/>
+                  <field name="cid" id="cid" default_focus="0" placeholder="Kundennummer"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
