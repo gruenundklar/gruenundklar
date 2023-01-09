@@ -7,7 +7,7 @@
         <field name="priority">2</field>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='invoice_date']" position="after">
-                <field name="bearbeiter"/>
+                <!--field name="bearbeiter"/-->
             </xpath>
         </field>
     </record>
