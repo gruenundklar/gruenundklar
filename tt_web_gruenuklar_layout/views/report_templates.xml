@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+
     <template id="external_layout_gruenundklar">
         <div t-attf-class="o_company_#{company.id}_layout header" t-att-style="report_header_style">
             <div class="o_background_header" style="top: 130px;position: relative;border-bottom: none;">
                 <div class="float-end">
                     <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="" alt="Logo"/>
                     <div class="company_address text-center" style="margin-top: 15px;">
-                       <span><p><span t-field="o.bearbeiter" /><br />Eduard-Mörike-Str. 6<br />68535 Edingen-Neckarhausen<br /><br />Telefon: 0176 / 31572669<br />Telefax: 06203 / 957944<br /><br />E-Mail: gruenundklar@web.de<br />Internet: gruenundklar.de</p></span>
+                        <span><p><span t-if="o.bearbeiter"><span t-field="o.bearbeiter" /></span><span t-else="">Roland Grabenauer</span><br />Eduard-Mörike-Str. 6<br />68535 Edingen-Neckarhausen<br /><br />Telefon: 0176 / 31572669<br />Telefax: 06203 / 957944<br /><br />E-Mail: gruenundklar@web.de<br />Internet: gruenundklar.de</p></span>
                     </div>
                </div>
                 <div style="font-size: 10px;text-decoration: underline;left: 50px;position: relative;">
