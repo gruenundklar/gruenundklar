@@ -48,7 +48,7 @@
     <template id="address_layout_gruen">
         <t t-set="colclass" t-value="('col-sm-5' if report_type == 'html' else 'col-5') + ' ms-auto'"/>
         <t t-if="address">
-            <div class="address row" style="position: relative;top: -80px;left: 35px;margin: 0px;">
+            <div class="address row" style="position: relative;top: 10px;left: 35px;margin: 0px;">
                 <t t-if="information_block">
                     <t t-set="colclass" t-value="'col-5 offset-1'"/>
                     <div name="information_block" class="col-6">
