@@ -7,14 +7,14 @@
                 <div class="float-end">
                     <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="" alt="Logo"/>
                     <div class="company_address text-center" style="margin-top: 15px;">
-                        <span><p><span t-if="o"><span t-if="o.bearbeiter"><span t-field="o.bearbeiter" /></span><span t-else="">Roland Grabenauer</span></span><span t-else="">Roland Grabenauer</span><br />Eduard-Mörike-Str. 6<br />68535 Edingen-Neckarhausen<br /><br />Telefon: 0176 / 31572669<br />Telefax: 06203 / 957944<br /><br />E-Mail: gruenundklar@web.de<br />Internet: gruenundklar.de</p></span>
+                        <span><p><span t-if="o"><span t-if="'bearbeiter' in o.fields_get()"><span t-field="o.bearbeiter" /></span><span t-else="">Roland Grabenauer</span></span><span t-else="">Roland Grabenauer</span><br />Eduard-Mörike-Str. 6<br />68535 Edingen-Neckarhausen<br /><br />Telefon: 0176 / 31572669<br />Telefax: 06203 / 957944<br /><br />E-Mail: gruenundklar@web.de<br />Internet: gruenundklar.de</p></span>
                     </div>
                </div>
                 <div style="font-size: 10px;text-decoration: underline;left: 50px;position: relative;">
              Grün &amp; Klar GbR Eduard-Mörike-Str. 6 68535 Edingen-Neckarhausen
                </div>
             </div>
-            <div class="row" style="font-size: 10px;border-top-style: solid;border-top-color: #000000;border-top-width:2px;position:absolute;top:1000px;width:100%">
+            <div class="row" style="font-size: 14px;border-top-style: solid;border-top-color: #000000;border-top-width:2px;position:absolute;top:1350px;width:100%;margin-top 10px;">
                 <div class="col-4">
                     <div class="text-center">
                         Grün &amp; Klar<br />
@@ -49,7 +49,7 @@
     <template id="address_layout_gruen">
         <t t-set="colclass" t-value="('col-sm-5' if report_type == 'html' else 'col-5') + ' ms-auto'"/>
         <t t-if="address">
-            <div class="address row" style="position: relative;top: 10px;left: 65px;margin: 0px;">
+            <div class="address row" style="position: relative;top: 10px;left: 55px;margin: 0px;">
                 <t t-if="information_block">
                     <t t-set="colclass" t-value="'col-5 offset-1'"/>
                     <div name="information_block" class="col-6">
