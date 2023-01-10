@@ -12,11 +12,7 @@ class ProductTemplate(models.Model):
 
     @api.model
     def _selection_service_policy(self):
-        service_policies = [
-            # (service_policy, string)
-            ('ordered_prepaid', 'Vorkasse/Festpreis'),
-            ('delivered_manual', 'basierend auf geleiferten Produkten'),
-        ]
-        if self.user_has_groups('project.group_project_milestone'):
-            service_policies.insert(1, ('delivered_milestones', 'basierend auf Stundenzetteln'))
+        service_policies = super()._selection_service_policy()
+        for policy in service_policies:
+            _logger.log(self, 'policy', policy)
         return service_policies
