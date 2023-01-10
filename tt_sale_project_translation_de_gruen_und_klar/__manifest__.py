@@ -16,7 +16,7 @@
     'author': 'TrendTec (development@trendtec.de)',
     'support': 'support@trendtec.de',
     'depends': [
-        'Sales - Project'
+        'sale_project'
     ],
     'website': 'https://www.trendtec.de/shop/odoo-benutzererweiterung-feld-kundennummer-1005',
     'data': [
