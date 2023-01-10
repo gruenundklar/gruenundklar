@@ -26,4 +26,4 @@ class ProductTemplate(models.Model):
                     service_policies_new.insert(3, ('delivered_timesheet', 'basierend auf Stundenzetteln'))
                 if str(pol) == 'delivered_milestones':
                     service_policies_new.insert(4, ('delivered_milestones', 'basierend auf Meilensteinen'))
-        return service_policies
+        return service_policies_new
