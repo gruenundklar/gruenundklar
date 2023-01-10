@@ -13,6 +13,7 @@ class ProductTemplate(models.Model):
     @api.model
     def _selection_service_policy(self):
         service_policies = super()._selection_service_policy()
+        _logger.info(service_policies)
         for policy in service_policies:
             _logger.info(policy)
             for pol in policy:
