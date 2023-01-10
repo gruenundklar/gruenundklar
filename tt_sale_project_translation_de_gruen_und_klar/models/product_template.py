@@ -14,5 +14,5 @@ class ProductTemplate(models.Model):
     def _selection_service_policy(self):
         service_policies = super()._selection_service_policy()
         for policy in service_policies:
-            _logger.log(self, 'policy', policy)
+            _logger.log(self, 1, policy)
         return service_policies
