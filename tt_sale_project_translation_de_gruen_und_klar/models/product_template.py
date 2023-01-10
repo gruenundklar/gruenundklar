@@ -14,15 +14,16 @@ class ProductTemplate(models.Model):
     def _selection_service_policy(self):
         service_policies = super()._selection_service_policy()
         _logger.info(service_policies)
+        service_policies_new = []
         for policy in service_policies:
             _logger.info(policy)
             for pol in policy:
                 if str(pol) == 'ordered_prepaid':
-                    policy.ordered_prepaid = 'Vorkasse/Festpreis'
+                    service_policies_new.insert(1, ('ordered_prepaid', 'Vorkasse/Festpreis'))
                 if str(pol) == 'delivered_manual':
-                    policy.delivered_manual = 'basierend auf gelieferten Produkten'
+                    service_policies_new.insert(2, ('delivered_manual', 'basierend auf gelieferten Produkten'))
                 if str(pol) == 'delivered_timesheet':
-                    policy.delivered_timesheet = 'basierend auf Stundenzetteln'
+                    service_policies_new.insert(3, ('delivered_timesheet', 'basierend auf Stundenzetteln'))
                 if str(pol) == 'delivered_milestones':
-                    policy.delivered_milestones = 'basierend auf Meilensteinen'
+                    service_policies_new.insert(4, ('delivered_milestones', 'basierend auf Meilensteinen'))
         return service_policies
