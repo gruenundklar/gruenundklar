@@ -17,11 +17,11 @@ class ProductTemplate(models.Model):
             _logger.info(policy)
             for pol in policy:
                 if str(pol) == 'ordered_prepaid':
-                    policy['ordered_prepaid'] = 'Vorkasse/Festpreis'
+                    policy.ordered_prepaid = 'Vorkasse/Festpreis'
                 if str(pol) == 'delivered_manual':
-                    policy['delivered_manual'] = 'basierend auf gelieferten Produkten'
+                    policy.delivered_manual = 'basierend auf gelieferten Produkten'
                 if str(pol) == 'delivered_timesheet':
-                    policy['delivered_timesheet'] = 'basierend auf Stundenzetteln'
+                    policy.delivered_timesheet = 'basierend auf Stundenzetteln'
                 if str(pol) == 'delivered_milestones':
-                    policy['delivered_milestones'] = 'basierend auf Meilensteinen'
+                    policy.delivered_milestones = 'basierend auf Meilensteinen'
         return service_policies
