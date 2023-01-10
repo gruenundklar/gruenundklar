@@ -12,7 +12,6 @@ class ProductTemplate(models.Model):
 
     @api.model
     def _selection_service_policy(self):
-        _logger.log("started")
         service_policies = [
             # (service_policy, string)
             ('ordered_prepaid', 'Vorkasse/Festpreis'),
