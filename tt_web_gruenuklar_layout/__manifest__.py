@@ -4,7 +4,7 @@
 
 {
     'name': 'Individuelles Template Grün & Klar',
-    'version': '1.0.15',
+    'version': '1.0.16',
     'category': 'TrendTec/Extensions',
     'sequence': 16,
     'summary': 'Individuelles Template Grün & Klar',
