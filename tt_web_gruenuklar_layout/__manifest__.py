@@ -4,7 +4,7 @@
 
 {
     'name': 'Individuelles Template Grün & Klar',
-    'version': '1.0.14',
+    'version': '1.0.15',
     'category': 'TrendTec/Extensions',
     'sequence': 16,
     'summary': 'Individuelles Template Grün & Klar',
@@ -17,7 +17,8 @@
     'depends': [
         'base',
         'web',
-        'account'
+        'account',
+        'sale'
     ],
     'website': 'https://www.trendtec.de/shop/odoo-erweiterung-bank',
     'data': [
