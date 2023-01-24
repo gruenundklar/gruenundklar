@@ -8,7 +8,7 @@ _logger = logging.getLogger(__name__)
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = 'sales.order'
     bearbeiter = fields.Selection([('Roland Grabenauer', 'Roland Grabenauer'),
                                       ('Sascha Hotz', 'Sascha Hotz'),
                                       ], string='Sachbearbeiter', default='Roland Grabenauer')
