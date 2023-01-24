@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_contacts_second_third_company_name_2" model="ir.ui.view">
+        <field name="name">Contacts second Company Name</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="priority">1000</field>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@id='company']" position="after">
+                  <field id="company2" class="text-break" name="name2" default_focus="0" placeholder="2nd row Company Name" attrs="{'required' : False, 'invisible': [('is_company','=', False)]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
