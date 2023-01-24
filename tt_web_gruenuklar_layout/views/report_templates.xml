@@ -7,7 +7,7 @@
                 <div class="float-end">
                     <img t-if="company.logo" t-att-src="image_data_uri(company.logo)" class="" alt="Logo"/>
                     <div class="company_address text-center" style="margin-top: 15px;">
-                        <span><p><span t-if="o"><span t-if="'bearbeiter' in o.fields_get()"><span t-field="o.bearbeiter" /></span><span t-else="">Roland Grabenauer</span></span><span t-else="">Roland Grabenauer</span><br />Eduard-Mörike-Str. 6<br />68535 Edingen-Neckarhausen<br /><br />Telefon: 0176 / 31572669<br />Telefax: 06203 / 954944<br /><br />E-Mail: gruenundklar@web.de<br />Internet: gruenundklar.de</p></span>
+                        <span><p>Eduard-Mörike-Str. 6<br />68535 Edingen-Neckarhausen<br /><br />Telefon: 0176 / 31572669<br />Telefax: 06203 / 954944<br /><br />E-Mail: gruenundklar@web.de<br />Internet: gruenundklar.de</p></span>
                     </div>
                </div>
                 <div style="font-size: 10px;text-decoration: underline;left: 50px;position: relative;">
@@ -73,6 +73,7 @@
                                 <p class="m-0" t-field="o.invoice_date"/>
                             </div>
                             <div class=" col-6 mw-100 mb-2" name="customer_id"><strong>Kundennummer:</strong><br /><span t-field="o.partner_id.cid" /></div>
+                            <div class=" col-6 mw-100 mb-2" name="customer_id"><strong>Sachbearbeiter:</strong><br /><span t-if="o"><span t-if="'bearbeiter' in o.fields_get()"><span t-field="o.bearbeiter" /></span><span t-else="">Roland Grabenauer</span></span><span t-else="">Roland Grabenauer</span></div>
 
                             <div class="col-auto col-3 mw-100 mb-2" t-if="o.invoice_date_due and o.move_type == 'out_invoice' and o.state == 'posted'" name="due_date">
                             </div>
