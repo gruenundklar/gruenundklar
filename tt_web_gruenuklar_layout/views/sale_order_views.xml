@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="priority">2</field>
         <field name="arch" type="xml">
-            <xpath expr="//field[@name='date_order']" position="before">
+            <xpath expr="//field[@name='recurrence_block']" position="after">
                 <field name="bearbeiter"/>
             </xpath>
         </field>
